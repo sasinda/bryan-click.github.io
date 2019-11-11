@@ -2,7 +2,7 @@
 layout: email
 priority: 2.0
 emoji: 🎟
-title: Invited
+title: Join Now
 subject: Hello. {USER_NAME} has invited you to join the {APP_NAME}.
 lead:
 body: You’ve been invited to join the {ORG_NAME} organization in the {APP_NAME}.
