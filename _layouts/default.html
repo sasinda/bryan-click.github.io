@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="{{ site.lang | default: "en-US" }}" xmlns="http://www.w3.org/1999/xhtml" style="">
+  <head>
+    <meta charset="utf-8" name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "jekyll.css" | relative_url }}">
+    {% if page.layout == "email" %}
+    <style type="text/css">
+        {% capture stylesheet %}
+          {% include email/stylesheet.scss %}
+        {% endcapture %}
+        {{ stylesheet | scssify }}
+    </style>
+    {% endif %}
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>

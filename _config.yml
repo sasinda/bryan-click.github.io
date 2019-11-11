@@ -1,0 +1,80 @@
+title: Emails
+
+description: >
+  Click Therapeutics HTML emails templates.
+port: 4000
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://clicktherapeutics.com" # the base hostname & protocol for your site
+
+support: Have Questions? We're here to help.
+support_email: support@clicktherapeutics.com
+
+twitter_username:
+facebook_username:
+
+port: 4000
+baseurl:
+url:
+
+permalink: pretty
+markdown: kramdown
+plugins:
+  - jemoji
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+collections:
+  emails:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  -
+    scope:
+      path: "_emails"
+    values:
+      layout: email
+      type: system
+
+exclude:
+  - LICENSE
+  - Gemfile
+  - node_modules
+  - bower_components
+  - favicons
+  - html
+  - images
+  - js
+  - scss
+  - svg
+  - vendor
+  - Gemfile.lock
+  - gulpfile.js
+  - postcss.config.js
+  - webpack.config.js
+  - bower.json
+  - package.json
+  - package-lock.json
+  - yarn-error.log
+  - yarn.lock
+  - README.md
+  - .bowerrc
+  - .editorconfig
+  - .DS_Store
+  - .gitignore
+  - .jekyll-metadata
+  - .jekyll-cache
+  - .jshintrc
+  - .sass-cache
+  - /*.ai
+  - /*.indd
+  - /*.idlk
+  - /*.log
+  - /*.pdf
+  - /*.psd
+  - /*.rp
+  - /*.terminal
+  - /*src*
+  - /*orig*

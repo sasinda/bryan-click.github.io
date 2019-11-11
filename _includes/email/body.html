@@ -1,0 +1,55 @@
+{% if page.lead %}
+<tr>
+  <td class="content-block"">
+      <h2 class="lead">{{ page.lead | append: "," }}</h2>
+    </td>
+</tr>
+{% endif %}
+
+{% if page.body %}
+<tr>
+  <td class="content-block">
+    <p>{{ page.body }}</p>
+  </td>
+</tr>
+{% endif %}
+
+{% if page.information %}
+<tr>
+  <td class="content-block">
+    <p>{{ page.information_label }}</p>
+    <div class="info-block">
+      <dl>
+      {% for info in page.information %}
+        {% for item in info %}
+        <dt><strong>{{ item[0] | capitalize  }}</strong></dt>
+        <dd>{{ item[1] }}</dd>
+        {% endfor %}
+      {% endfor %}
+      </dl>
+    </div>
+  </td>
+</tr>
+{% endif %}
+
+{% if page.link %}
+<tr>
+  <td class="content-block">
+    <p><a href="#" class="main-link">{{ page.link }}</a></p>
+    {% if page.hint %}
+    <p class="hint">
+      <small><em>{{ page.hint }}</em></small>
+    </p>
+    {% endif %}
+  </td>
+</tr>
+{% endif %}
+
+{% if page.error %}
+<tr>
+  <td class="content-block">
+    <p><strong>{{ page.error_label }}</strong></p>
+    {{ page.error | markdownify }}
+  </td>
+</tr>
+{% endif %}

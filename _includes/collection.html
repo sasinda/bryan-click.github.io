@@ -1,0 +1,10 @@
+<div class="content-block">
+  <ol>
+  {% assign emails = site.emails | sort: 'priority' %}
+  {% for email in emails  %}
+    <li>
+      <a href="{{ site.baseurk }}{{ email.url }}">{{ email.title }}</a>
+    </li>
+  {% endfor %}
+  </ol>
+</div>

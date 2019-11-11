@@ -1,0 +1,8 @@
+- name: facebook
+  url: facebook.com
+- name: linkedin
+  url: linkedin.com
+- name: twitter
+  url: twitter.com
+- name: instagram
+  url: instagram.com

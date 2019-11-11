@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: #4A4A4A;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #0BA1E6;
+}
+
+table td {
+  vertical-align: top;
+}
+
+address {
+  font-style: normal;
+}
+
+.body-wrap {
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+.container {
+  width: 100% !important;
+  display: block !important;
+  margin: 0 auto !important;
+  clear: both !important;
+}
+
+@media screen and (max-width:600px) {
+	.container {
+	}
+}
+
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  padding: 48px 24px;
+}
+
+.main {
+  background: #FFFFFF;
+}
+
+.content-wrap {
+  padding: 24px;
+}
+
+.header,
+.masthead {
+  padding: 0 0 24px;
+  border-bottom: 1px solid #E9E9E9;
+  margin-bottom: 16px;
+
+  h1 {
+    font-size: 32px;
+    display: inline-block;
+  }
+}
+
+.content-block {
+  padding: 0 0 16px;
+
+  .lead {
+    margin: 12px 0;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 100%;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    & > li {
+      font-size: 100%;
+      line-height: 1.6;
+      margin: 16px 0;
+      padding: 4px 0;
+    }
+  }
+
+  ol {
+    margin: 0 16px 0;
+    padding: 0;
+
+    & > li {
+      font-size: 100%;
+      line-height: 1.6;
+      margin: 8px 0;
+      padding: 4px 0;
+    }
+  }
+}
+
+.main-link {
+  font-weight: normal;
+  width: 100%;
+  color: #4A4A4A;
+  background-color: #01F1FD;
+  padding: 12px 24px;
+  line-height: 2;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 64px;
+  line-height: 2;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.hint {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.info-block {
+  padding: 16px 16px;
+  background-color: #F5F5F5;
+  margin-bottom: 24px;
+
+    dl {
+
+      dt {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      dd {
+        font-size: 14px;
+
+        &:not(:last-of-type) {
+          margin-bottom: 16px;
+        }
+      }
+
+
+    }
+}
+
+.support {
+  margin: 48px 0 0;
+  text-align: center;
+}
+
+.share {
+  margin: 48px 0 0;
+  text-align: center;
+
+  ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}
+
+.footer {
+  margin: 24px 0 0;
+  text-align: center;
+}
