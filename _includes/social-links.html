@@ -1,7 +1,7 @@
 <ul class="social">
   {% for link in site.data.social-media %}
-  <li style="display:inline-block;">
-    <a href="{{ link.url }}"><img src="/assets/svg/vendor/{{ link.name }}.svg" alt="{{ link.name }}"></a>
+  <li>
+    <a href="https://{{ link.url }}" target="_blank"><img src="/assets/svg/vendor/{{ link.name }}.svg" alt="{{ link.name }}"></a>
   </li>
   {% endfor %}
 </ul>
