@@ -49,6 +49,13 @@ address {
   padding: 48px 24px;
 }
 
+.logo {
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 .main {
   background: #FFFFFF;
 }
